@@ -30,13 +30,17 @@
 \usepackage{booktabs}
 %\usepackage{scrextend}
 \usepackage{ltxtable} % To combine the features of the tabularx environment and the longtable environment (allow publications tablularx to go to more than 1 page)
+\usepackage{datetime}
+
+\newdateformat{monthyeardate}{
+  \monthname[\THEMONTH] \THEYEAR}
 
 \makeatother
 
 \fancyhead{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot{}
-\lfoot{Koontz CV}
+\lfoot{Spiers CV}
 %\cfoot{CV}
 \rfoot{\thepage\ of \pageref{LastPage}}
 
@@ -45,22 +49,25 @@
 
 \begin{document}
 \begin {center}
-{\huge Michael J. Koontz}\tabularnewline
+{\huge Anna I. Spiers}\tabularnewline
 \vspace{1em}
 
 \begin{tabularx}{\textwidth}{@{}>{\raggedright}X >{\raggedleft}X@{}}
-Research Scientist & Earth Lab/CIRES \tabularnewline
-mikoontz@gmail.com & University of Colorado Boulder \tabularnewline
-Phone: (410) 370-1815 & Boulder, CO 80304 
+Ph.D. Candidate & Ecology \& Evolutionary Biology \tabularnewline
+anna.spiers@colorado.edu & University of Colorado Boulder \tabularnewline
+GitHub: annaspiers & Twitter: @SpiersAnna 
 \end{tabularx}
 
-\url{https://michaeljkoontz.weebly.com/}
+\url{https://annaspiers.weebly.com//}
 \end{center}
 \vspace{-1.5em}
 
 \rule[0.5ex]{1\linewidth}{0.5pt} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabularx}{\textwidth}{@{}>{\raggedright}X >{\raggedleft}X@{}}
+& Last updated \monthyeardate\today 
+\end{tabularx}
 
 \vspace{0.5ex}
 \subsubsection*{\textsc{Education}}
@@ -68,47 +75,62 @@ Phone: (410) 370-1815 & Boulder, CO 80304
 
 \renewcommand{\arraystretch}{1.2}
 \begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5.25in} >{\raggedleft}X@{}}
-Ph.D., Ecology; University of California, Davis & 2014 - 2019 \tabularnewline
-\addtolength{\leftskip}{5ex}\emph{Committee:} Andrew Latimer, Malcolm North, Connie Millar &   \tabularnewline
+Ph.D., Ecology. University of Colorado Boulder. Boulder, CO & 2017 - present \tabularnewline
+\addtolength{\leftskip}{5ex}\emph{Committee:} Brett Melbourne, Kendi Davies, Carol Wessman, Katherine Suding, Megan Cattau &   \tabularnewline
 \end{tabularx}
 
 \begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5.25in} >{\raggedleft}X@{}}
-M.Sc., Ecology; Colorado State University & 2012 - 2014 \tabularnewline
-\addtolength{\leftskip}{5ex}\emph{Committee:} Ruth Hufbauer, Tom Hobbs, Brett Melbourne & \tabularnewline
-\end{tabularx}
-
-\begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5.25in} >{\raggedleft}X@{}}
-B.Sc. with highest honors, Biology; University of Hawaii at Hilo & 2007 - 2009 \tabularnewline
-\addtolength{\leftskip}{5ex}\emph{Advisors:} Patrick Hart, Rebecca Ostertag &   \tabularnewline
+B.A. Mathematics. Williams College. Williamstown, MA & 2011 - 2015 \tabularnewline
+\addtolength{\leftskip}{5ex}\emph{Advisor:} Julie C. Blackwood &   \tabularnewline
 \end{tabularx}
 
 \vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%\subsubsection*{\textsc{Professional Experience}}
+%\vspace{-0.5ex}
+%
+%\renewcommand{\arraystretch}{1.2}
+%\begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5in} >{\raggedleft}X@{}}
+%Research Scientist; Earth Lab/CIRES; University of Colorado Boulder & 2/2021 - present \tabularnewline
+%Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 - 2021 \tabularnewline
+%\end{tabularx}
+
+%\vspace{1ex}
+
+%Same information, but pitched as fellowships instead of jobs
 \subsubsection*{\textsc{Professional Experience}}
 \vspace{-0.5ex}
 
 \renewcommand{\arraystretch}{1.2}
 \begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5in} >{\raggedleft}X@{}}
-Research Scientist; Earth Lab/CIRES; University of Colorado Boulder & 2/2021 - present \tabularnewline
-Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 - 2021 \tabularnewline
+\emph{Intern}. The Nature Conservancy Washington (funded by NSF INTERN Grant). & 2022 - present \tabularnewline 
+
+\emph{Researcher}. Forestoration International Flagship Restoration Case Studies. & 2021 - present \tabularnewline 
+
+\emph{Research assistant}. Funded by NSF CAREER and RAPID Grants (PI: KF Davies). & 2018 - 2021 \tabularnewline 
+
+\emph{Research assistant}. Earth Lab Analytics Hub/CIRES. & 2019 - 2020 \tabularnewline 
+
+\emph{Farm apprentice}. Organic farms in Maine, USA and Siena, IT. & 2012, 2017 \tabularnewline 
+
+\emph{Quality assurance analyst}. Epic Health Systems, Public Health Team. & 2015 - 2016 \tabularnewline 
+
+\emph{Undergraduate fellow}. Medicinal Plants and Ethnobotany in Peru. & Summer 2014 \tabularnewline 
+
+\emph{Undergraduate researcher}. Tardigrades of the Berkshires. Williamstown, Ma. & Winter 2014 \tabularnewline %advised by Dr. Joan Edwards.
+
+\emph{Undergraduate researcher}. NSF Research Experience for Undergraduates. & Summer 2013 \tabularnewline %Funded by NSF Award \#1156550: Tardigrade Research in the Canopy (Co-PIs: Drs. William Miller and Meg Lowman). Baldwin City, KS.
+
+% AIS where to put these?
+%2016	Cross Country Coach, Maggie L Walker Governor’s School, Richmond, VA
+%2016		Substitute Teacher, Maggie L Walker Governor’s School, Richmond, VA
+%2013-15	Peer Tutor, Depts. of Mathematics and Chemistry, Williams College
+
 \end{tabularx}
 
 \vspace{1ex}
-
-% Same information, but pitched as fellowships instead of jobs
-%\subsubsection*{\textsc{Fellowships}}
-%\vspace{-0.5ex}
-%
-%\renewcommand{\arraystretch}{1.2}
-%\begin{tabularx}{\textwidth}{@{}>{\raggedright}p{5in} >{\raggedleft}X@{}}
-%Plant Sciences Departmental Graduate Student Research Award (\$185,803) & 2015 - 2019 \tabularnewline 
-%UC Davis Graduate Group in Ecology Fellowship (\$58,172) & 2014 - 2016 \tabularnewline
-%NSF Graduate Research Fellowship (\$132,000) & 2013 - 2018 \tabularnewline
-%\end{tabularx}
-%
-%\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -125,7 +147,6 @@ Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 
 %\end{tabularx}
 %
 %\vspace{1ex}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -151,33 +172,30 @@ Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 
 
 \vspace{1ex}
 
-\newpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection*{\textsc{Refereed Book Chapters}}
 
-\setlength{\LTpre}{0pt}
-\setlength{\LTpost}{2ex}
-\setlength{\extrarowheight}{0.25ex}
-
-\LTXtable{\textwidth}{components/book-chapters.tex}
-
-\vspace{1ex}
+%\subsubsection*{\textsc{Research Grants}}
+%\vspace{-0.5ex}
+%
+%\LTXtable{\textwidth}{components/research-grants.tex}
+%
+%\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection*{\textsc{Research Grants}}
-\vspace{-0.5ex}
-
-\LTXtable{\textwidth}{components/research-grants.tex}
-
-\vspace{1ex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection*{\textsc{Open Education Resources}}
 \vspace{-0.5ex}
 
 \LTXtable{\textwidth}{components/open-education-materials.tex}
+
+\vspace{1ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{\textsc{Mentorship}}
+\vspace{-0.5ex}
+
+\LTXtable{\textwidth}{components/mentorship.tex}
 
 \vspace{1ex}
 
@@ -189,19 +207,6 @@ Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 
 \LTXtable{\textwidth}{components/teaching-experience.tex}
 
 \vspace{1ex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \pagebreak
-
-\subsubsection*{\textsc{Current Collaborations}}
-\vspace{-0.5ex}
-
-\LTXtable{\textwidth}{components/current-collaborations.tex}
-
-\vspace{1ex}
-
-\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -223,11 +228,11 @@ Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\subsubsection*{\textsc{Contributed Talks}}
-%
-%\LTXtable{\textwidth}{contributed-talks.tex}
-%
-%\vspace{1ex}
+\subsubsection*{\textsc{Contributed Presentations}}
+
+\LTXtable{\textwidth}{components/contributed-presentations.tex}
+
+\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -239,21 +244,21 @@ Postdoctoral Researcher; Earth Lab/CIRES; University of Colorado Boulder & 2019 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection*{\textsc{Service and Outreach}}
+\subsubsection*{\textsc{Service}}
 \vspace{-0.5ex}
 
-\renewcommand{\arraystretch}{1.2}
-\begin{tabularx}{\textwidth}{@{}>{\raggedright}p{4.5in} >{\raggedleft}X@{}}
-Cal-Wood Education Center Science Advisory Panel & 2022 - present \tabularnewline
-GLORIA Great Basin (\textcolor{blue}{\href{https://www.gloriagreatbasin.org/}{https://www.gloriagreatbasin.org/}}) & \tabularnewline
-\addtolength{\leftskip}{5ex}Secretary, Board Member, Data Manager & 2017 - present \tabularnewline
-\addtolength{\leftskip}{5ex}Volunteer & 2013 - present \tabularnewline
-Graduate Group in Ecology Diversity Committee & 2015 - 2019 \tabularnewline
-Manuscript reviewer & \tabularnewline
-\addtolength{\leftskip}{5ex} Environmental Research Letters, Forests, Remote Sensing in Ecology and Conservation, Journal of Theoretical Biology, Ecography, Oikos, Global Ecology and Biogeography & \tabularnewline
-Software reviewer & \tabularnewline
-\addtolength{\leftskip}{5ex} rOpenSci \texttt{R} packages (\textcolor{blue}{\href{https://github.com/ropensci/onboarding/issues/82}{ccafs}}), Google Earth Engine code (fire severity methodology) & \tabularnewline
-\end{tabularx}
+\LTXtable{\textwidth}{components/service.tex}
+
+\vspace{1ex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection*{\textsc{Outreach}}
+\vspace{-0.5ex}
+
+\LTXtable{\textwidth}{components/outreach.tex}
+
+\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -262,8 +267,7 @@ Software reviewer & \tabularnewline
 
 \renewcommand{\arraystretch}{1.2}
 \begin{tabularx}{\textwidth}{@{}>{\raggedright}p{4.5in} >{\raggedleft}X@{}}
-Ecological Society of America & 2014 - present\tabularnewline
-American Alpine Club & 2016 - present\tabularnewline
+Ecological Society of America & 2019 - present (sans 2020) \tabularnewline
 %Northern California Botanists & 2016\tabularnewline
 \end{tabularx}
 
@@ -275,22 +279,6 @@ American Alpine Club & 2016 - present\tabularnewline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Old sections
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-% This section is pretty old now...
-%\subsubsection*{\textsc{Undergraduate Mentoring}}
-%\vspace{-0.5ex}
-%
-%\renewcommand{\arraystretch}{1.2}
-%\begin{tabularx}{\textwidth}{@{}>{\raggedright}p{4.5in} >{\raggedleft}X@{}}
-%Charlotte Hoover (Watershed Science major) & Feb. 2013 to Aug. 2014 \tabularnewline
-%Kaitlyn Adkins (Biology major) & Sep. 2013 to Aug. 2014\tabularnewline
-%Jenny Rickford (Environmental Engineering major) & Feb. 2014 to Apr. 2014
-%\end{tabularx}
-%
-%\vspace{1ex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -417,5 +405,30 @@ American Alpine Club & 2016 - present\tabularnewline
 %$^{1}$University of California, Davis, $^{2}$Colorado State University 
 %\end{hangparas}
 %
+%\vspace{1ex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \pagebreak
+%
+%\subsubsection*{\textsc{Current Collaborations}}
+%\vspace{-0.5ex}
+%
+%\LTXtable{\textwidth}{components/current-collaborations.tex}
+%
+%\vspace{1ex}
+%
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsubsection*{\textsc{Refereed Book Chapters}}
+
+%\setlength{\LTpre}{0pt}
+%\setlength{\LTpost}{2ex}
+%\setlength{\extrarowheight}{0.25ex}
+
+%\LTXtable{\textwidth}{components/book-chapters.tex}
+
 %\vspace{1ex}
 
