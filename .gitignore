@@ -6,6 +6,4 @@
 *.out
 .DS_Store
 .Rproj.user
-*industry.tex
-*government.tex
 *.Rproj
